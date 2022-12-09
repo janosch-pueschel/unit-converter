@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>
+          Metric/Imperial Unit Conversion
+          <input type="text" id="input" />
+          <button id="convert-btn">Convert</button>
+        </h1>
+      </div>
+      <div>
+        <div>
+          <h2>Length (Meter/Feet)</h2>
+          <p id="test">
+            <span id="input-value">x</span> meter =
+            <span id="m-ft">x*3.281</span> feet |
+            <span id="input-value">x</span> feet =
+            <span id="feet-to-meter">x*0.305</span> meter
+          </p>
+        </div>
+        <div>
+          <h2>Volume (Liters/Gallons)</h2>
+          <p>
+            <span id="input-value">x</span> liter =
+            <span id="l-gal">x*0.264</span> gallon |
+            <span id="input-value">x</span> gallon =
+            <span id="gal-l">x*3.785</span> liter
+          </p>
+        </div>
+        <div>
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p>
+            <span id="input-value">x</span> kilogram =
+            <span id="kg-lbs">x*2.204</span> pound |
+            <span id="input-value">x</span> pound =
+            <span id="lbs-kg">x*0.454</span> kilogram
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
