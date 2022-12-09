@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  background-color: #1f2937;
+  color: #ffffff;
+}
+body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .header {
+  background-color: #6943ff;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .header h1 {
+  font-size: 22px;
+}
+body .header input {
+  width: 70px;
+  height: 70px;
+  background-color: #6943ff;
+  border: #b295ff 2px solid;
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+}
+body .header button {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #3d3d3d;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+}
+body .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-around;
+  height: 60vh;
+}
+body .main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #273549;
+  width: 100vw;
+  height: 15vh;
+}
+body .main div h2 {
+  color: #ccc1ff;
+  font-size: 16px;
+}
+body .main div p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,43 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <title>Unit Converter</title>
   </head>
   <body>
     <div>
-      <div>
-        <h1>
-          Metric/Imperial Unit Conversion
-          <input type="text" id="input" />
-          <button id="convert-btn">Convert</button>
-        </h1>
+      <div class="header">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input type="text" id="input" placeholder="1" />
+        <button id="convert-btn">Convert</button>
       </div>
-      <div>
+      <div class="main">
         <div>
           <h2>Length (Meter/Feet)</h2>
           <p>
-            <span class="input-value">x</span> meter =
-            <span id="m-ft">x*3.281</span> feet |
-            <span class="input-value">x</span> feet =
-            <span id="ft-m">x/3.281</span> meter
+            <span class="input-value">1</span> meter =
+            <span id="m-ft">3.281</span> feet |
+            <span class="input-value">1</span> feet =
+            <span id="ft-m">0.305</span> meter
           </p>
         </div>
         <div>
           <h2>Volume (Liters/Gallons)</h2>
           <p>
-            <span class="input-value">x</span> liter =
-            <span id="l-gal">x*0.264</span> gallon |
-            <span class="input-value">x</span> gallon =
-            <span id="gal-l">x/0.264</span> liter
+            <span class="input-value">1</span> liter =
+            <span id="l-gal">0.264</span> gallon |
+            <span class="input-value">1</span> gallon =
+            <span id="gal-l">3.785</span> liter
           </p>
         </div>
         <div>
           <h2>Mass (Kilograms/Pounds)</h2>
           <p>
-            <span class="input-value">x</span> kilogram =
-            <span id="kg-lbs">x*2.204</span> pound |
-            <span class="input-value">x</span> pound =
-            <span id="lbs-kg">x/2.204</span> kilogram
+            <span class="input-value">1</span> kilogram =
+            <span id="kg-lbs">2.204</span> pound |
+            <span class="input-value">1</span> pound =
+            <span id="lbs-kg">0.454</span> kilogram
           </p>
         </div>
       </div>

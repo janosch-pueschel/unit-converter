@@ -12,16 +12,6 @@ const poundKilogramEl = document.getElementById("lbs-kg");
 const convertBtn = document.getElementById("convert-btn");
 const inputValue = document.getElementsByClassName("input-value");
 
-convertBtn.addEventListener("click", () => {
-  setInputValue();
-  convertUnit(meterFeet, meterFeetEl);
-  convertUnit(meterFeet, feetMeterEl);
-  convertUnit(literGallon, literGallonEl);
-  convertUnit(literGallon, gallonLiterEl);
-  convertUnit(kilogramPound, kilogramPoundEl);
-  convertUnit(kilogramPound, poundKilogramEl);
-});
-
 function setInputValue() {
   const input = document.getElementById("input").value;
   for (let i = 0; i < inputValue.length; i++) {
@@ -44,3 +34,13 @@ function convertUnit(conversionNumber, resultEl) {
     resultEl.innerText = result.toFixed(3);
   }
 }
+
+convertBtn.addEventListener("click", () => {
+  setInputValue();
+  convertUnit(meterFeet, meterFeetEl);
+  convertUnit(meterFeet, feetMeterEl);
+  convertUnit(literGallon, literGallonEl);
+  convertUnit(literGallon, gallonLiterEl);
+  convertUnit(kilogramPound, kilogramPoundEl);
+  convertUnit(kilogramPound, poundKilogramEl);
+});

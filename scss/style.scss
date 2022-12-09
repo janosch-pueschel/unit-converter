@@ -1,0 +1,84 @@
+$background-color: #1f2937;
+$head-container-color: #6943ff;
+$main-container-color: #273549;
+$primary-color: #ffffff;
+$secondary-color: #ccc1ff;
+$border-color: #b295ff;
+$button-text-color: #3d3d3d;
+
+@mixin basic-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  background-color: $background-color;
+  color: $primary-color;
+
+  div {
+    @include basic-flexbox;
+    flex-direction: column;
+  }
+
+  .header {
+    background-color: $head-container-color;
+    width: 100vw;
+    height: 40vh;
+    @include basic-flexbox;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    input {
+      width: 70px;
+      height: 70px;
+      background-color: $head-container-color;
+      border: $border-color 2px solid;
+      border-radius: 8px;
+      text-align: center;
+      color: $primary-color;
+      font-size: 26px;
+    }
+
+    button {
+      font-size: 16px;
+      background-color: $primary-color;
+      color: $button-text-color;
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+
+  .main {
+    @include basic-flexbox;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-around;
+    height: 60vh;
+
+    div {
+      @include basic-flexbox;
+      background-color: #273549;
+      width: 100vw;
+      height: 15vh;
+
+      h2 {
+        color: $secondary-color;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
